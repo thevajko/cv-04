@@ -10,6 +10,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        table {
+            border: 1px;
+        }
+    </style>
 </head>
 <body>
 
@@ -23,7 +28,7 @@ Faktoriál 12 je <?php echo factorial(12) ?>.
 $osoby = PersonsLoader::loadPersonsFromCSV("data/osoby.csv");
 $osoby = PersonSorter::sort($osoby, isset($_GET['sort']) ? $_GET['sort'] : "s",  isset($_GET['asc']) ? $_GET['asc'] : "0");
 ?>
-<table border="1">
+<table>
     <tr>
         <th><a href="?sort=surname">Priezvisko</a></th>
         <th><a href="?sort=name">Meno</a></th>
