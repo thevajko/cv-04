@@ -1,8 +1,12 @@
 <?php
 
+/**
+ * Separate class, so loading logic is not part of page code
+ */
 class PersonsLoader
 {
     /**
+     * Static method for loading persons from a file
      * @param $filePath
      * @return Person[]
      */

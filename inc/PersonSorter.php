@@ -1,22 +1,37 @@
 <?php
 
+/**
+ * Separate class, so sorting logic is not part of page code
+ */
 class PersonSorter
 {
-     public static function sort($array, $param, $asc = 0 ){
-         usort($array, function (Person $a, Person $b) use ($asc, $param) {
+    /**
+     * Static method for sorting persons array
+     * @param $array array to sort
+     * @param $param attribute name for sorting
+     * @param $asc order of sorting. 1=ASC -1=DESC
+     * @return Osoba[]
+     */
+    public static function sort($array, $param, $asc = 1){
+        // Collator is needed to correctly sort strings with diacritics
+         $c = new Collator('sk');
 
-             $or = $asc == 0 ? -1 : 1;
-
+         // using usort with callback, so is possible to use custom sorting logic
+         usort($array, function (Person $a, Person $b) use ($c, $asc, $param) {
+            // this closure uses param as attribute selector
             switch ($param) {
                 case 'name' :
-                    return  strcmp($a->getName(), $b->getName())*$asc;
+                    // $asc is used to reverse order of sorting if needed
+                    return  $c->compare($a->getName(), $b->getName())*$asc;
                 case 'year' :
-                    return  strcmp($a->getYear(), $b->getYear())*$asc;
+                    // years needs to be compared as numbers, not as string
+                    // using string to compare number causes error in ordering
+                    return  ($a->getYear() - $b->getYear())*$asc;
                 case 'sex' :
-                    return  strcmp($a->getSex(), $b->getSex())*$asc;
+                    return  $c->compare($a->getSex(), $b->getSex())*$asc;
                 default:
                 case 'surname' :
-                    return  strcmp($a->getSurname(), $b->getSurname())*$asc;
+                    return  $c->compare($a->getSurname(), $b->getSurname())*$asc;
             }
          });
          return $array;
