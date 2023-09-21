@@ -39,9 +39,9 @@ Momentálne je otvorená branch __MAIN__, ktorá obsahuje _štartér_. Riešenie
    * Pozor na veľkosti buniek v jednotlivých stĺpcoch. Ich veľkosť sa rovná najdlšej bunke z daného stĺpca.
 5. Pod aktuálnu tabuľku vypísťe druhú zoradenú podľa priezviska
 8. Pridajte výpis štatistík (logika opäť do samostatnej triedy):
-   9. Najmladšiu a najstaršiu osobu
-   10. Počet mužov a žien
-   11. Rok v ktorom sa narodilo najviac osôb
+   * Najmladšiu a najstaršiu osobu
+   * Počet mužov a žien 
+   * Rok v ktorom sa narodilo najviac osôb
 
 
 
