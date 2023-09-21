@@ -19,7 +19,7 @@ $sortingOrder = (int)(isset($_GET['order']) ? $_GET['order'] : -1);
 $persons = PersonsLoader::loadPersonsFromCSV("data/osoby.csv");
 
 $t = new PersonTable();
-
+// tables render
 echo "\n\nNEZORADENA\n";
 $t->renderTable($persons);
 echo "\n\nZORADENA\n";
@@ -31,8 +31,8 @@ $oldest = PersonsStats::getOldest($persons);
 $maleFemaleCounts = PersonsStats::getMaleFemaleCounts($persons);
 $mostCommonYear =  PersonsStats::getMostCommonYear($persons);
 
+// stats render
 echo "\n\n### Štatistiky ###\n";
-
 echo "Najmladšia osoba je {$youngest->getSurname()}, {$youngest->getName()} ({$youngest->getYear()}).\n";
 echo "Najstašia osoba je{$oldest->getSurname()}, {$oldest->getName()} ({$oldest->getYear()}).\n";
 echo "Počet mužov/žien {$maleFemaleCounts['m']}/{$maleFemaleCounts['f']}.\n";
