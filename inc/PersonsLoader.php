@@ -21,7 +21,7 @@ class PersonsLoader
 
         // iterate through all ines
         foreach ( $allLines as $line) {
-            $personData =  explode(";", $line);
+            $personData =  explode(";", trim($line));
             $persons[] = new Person($personData[0],$personData[1],$personData[2],$personData[3]);
         }
 
