@@ -1,28 +1,48 @@
 # VAII Cvičenie 04
 Momentálne je otvorená branch __MAIN__, ktorá obsahuje _štartér_. Riešenie obsahuje branch  __SOLUTION__.
 
-## Úlohy
-
 ### Jednoduchá algoritmizačná úloha
-1. Do súbora `index.php` doplňte základnú kostru HTML5 dokumentu.
-2. V cykle vypíšte 10 nadpisov, pričom v každom nadpise vypíšte jeho poradové číslo.
-   3. Skúste cez krokovanie v debugu zmeniť hodnotu premmenj rátajúcej iterácie.
-4. Naprogramujte výpočet faktoriálu. 
-   5. Túto funkciu umiestnite do samostatného súboru a volajte ju z `index.php`.
+1. V cykle vypíšte 10 riadkov, pričom v každom vypíšte jeho poradové číslo.
+   * Skúste cez krokovanie v debugu zmeniť hodnotu premmenej rátajúcej iterácie.
+2. Naprogramujte výpočet faktoriálu.
+   * Túto funkciu umiestnite do samostatného súboru a volajte ju z `index.php`.
 
 ### Osoby
 
 1. V súbore `data/osoby.csv` sa nachádza zoznam osôb.
-   2. Načítajte tento zoznam a vypíšte ho v HTML tabuľke, pričom každý atribút bude vypísaný v samostatnom stĺpci. Pridajte stĺpec vek, ktorého hodnota bude závisieť od aktuálneho roku.   
-   3. Logiku načítavania umiestnite do samostatnej triedy, ktorá po načítaní vráti pole osôb.Dáta o osobách bude obsahovať samostatná trieda
-4. Osoby zoraďte podľa priezviska
-5. Zoraďovanie rozšírte tak, aby sa dalo zoraďovať podla jednotlivých stĺpcov tabuľky
-   6. Logiku zoraďovanie opäť umiestnite do samostatnej triedy.
-7. Pridajte možnosť zoraďovania oboma smermi
-8. Pridajte výpis štatistík:
+   3. Načítajte tento zoznam a vypíšte ho v riadkoch. Logiku načítavania umiestnite do samostatnej triedy, ktorá po načítaní vráti pole osôb. Dáta o osobe bude obsahovať samostatná trieda.
+4. Vytvorte samostatnu logiku, ktorá zoznam osôb zobrazí vo forme TEXTOVEJ tabuľky, takto:
+      ```php
+      ----------------------------
+      |Jasna    |Janka   |1980 |f|
+      |Fnukol   |Peter   |1967 |m|
+      |Hrkút    |Patrik  |2003 |m|
+      |Kukuričná|Patricia|2010 |f|
+      |Chytil   |Leopold |1980 |m|
+      |Ďuráčik  |Michal  |2015 |m|
+      |Michová  |Michaela|1967 |f|
+      |Janech   |Ján     |1996 |m|
+      |Odinson  |Thor    |-9999|m|
+      |Zbožná   |Terézia |2000 |f|
+      |Nálepná  |Gitka   |1980 |f|
+      |Abdul    |Joáchim |1982 |m|
+      |Zuzulová |Zuzana  |1998 |f|
+      |Janda    |Dalibor |1998 |m|
+      |Maiga    |Ibrahim |1998 |m|
+      |Hnát     |Juraj   |2021 |m|
+      |Janka    |Ján     |2013 |m|
+      |Mravec   |Fedor   |1999 |m|
+      |Kapustová|Alžbeta |2020 |f|
+      |Bojovnica|Xenia   |1987 |f|
+      ----------------------------
+      ```
+   * Pozor na veľkosti buniek v jednotlivých stĺpcoch. Ich veľkosť sa rovná najdlšej bunke z daného stĺpca.
+5. Pod aktuálnu tabuľku vypísťe druhú zoradenú podľa priezviska
+8. Pridajte výpis štatistík (logika opäť do samostatnej triedy):
    9. Najmladšiu a najstaršiu osobu
    10. Počet mužov a žien
    11. Rok v ktorom sa narodilo najviac osôb
+
 
 
 ## Ako nájsť branch môjho cvičenia?
