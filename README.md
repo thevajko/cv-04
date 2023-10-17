@@ -2,10 +2,10 @@
 Momentálne je otvorená branch __MAIN__, ktorá obsahuje _štartér_. Riešenie obsahuje branch  __SOLUTION__.
 
 ### Jednoduchá algoritmizačná úloha
-1. V cykle vypíšte 10 riadkov, pričom v každom vypíšte jeho poradové číslo.
-   * Skúste cez krokovanie v debugu zmeniť hodnotu premmenej rátajúcej iterácie.
+1. V cykle vypíšte čísla od 1 do 10, pričom v každom riadku vypíšte jedno číslo.
 2. Naprogramujte výpočet faktoriálu.
    * Túto funkciu umiestnite do samostatného súboru a volajte ju z `index.php`.
+   * Skúste cez krokovanie v debugu zmeniť hodnotu premennej.
 
 ### Osoby
 
