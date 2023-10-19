@@ -1,47 +1,51 @@
 # VAII Cvičenie 04
 Momentálne je otvorená branch __MAIN__, ktorá obsahuje _štartér_. Riešenie obsahuje branch  __SOLUTION__.
 
-### Jednoduchá algoritmizačná úloha
+### Jednoduché algoritmizačné úlohy
 1. V cykle vypíšte čísla od 1 do 10, pričom v každom riadku vypíšte jedno číslo.
-2. Naprogramujte výpočet faktoriálu.
-   * Túto funkciu umiestnite do samostatného súboru a volajte ju z `index.php`.
-   * Skúste cez krokovanie v debugu zmeniť hodnotu premennej.
+2. Naprogramujte výpočet faktoriálu pre čísla od 1 do 10.
+   * Funkciu umiestnite do samostatného súboru a volajte ju z `index.php`.
+   * Vyskúšajte ladenie a zmenu hodnoty premennej cykle.
 
 ### Osoby
 
 1. V súbore `data/osoby.csv` sa nachádza zoznam osôb.
-   3. Načítajte tento zoznam a vypíšte ho v riadkoch. Logiku načítavania umiestnite do samostatnej triedy, ktorá po načítaní vráti pole osôb. Dáta o osobe bude obsahovať samostatná trieda.
-4. Vytvorte samostatnu logiku, ktorá zoznam osôb zobrazí vo forme TEXTOVEJ tabuľky, takto:
+2. Načítajte tento zoznam a vypíšte ho v riadkoch. Dáta o osobe bude obsahovať samostatná trieda. 
+Načítavanie dát môžete umiestniť do samostatnej triedy, ktorá po načítaní vráti pole osôb. 
+3. Zobrazte zoznam osôb vo forme TEXTOVEJ tabuľky:
+
       ```php
       ----------------------------
-      |Jasna    |Janka   |1980 |f|
-      |Fnukol   |Peter   |1967 |m|
-      |Hrkút    |Patrik  |2003 |m|
-      |Kukuričná|Patricia|2010 |f|
-      |Chytil   |Leopold |1980 |m|
-      |Ďuráčik  |Michal  |2015 |m|
-      |Michová  |Michaela|1967 |f|
-      |Janech   |Ján     |1996 |m|
-      |Odinson  |Thor    |-9999|m|
-      |Zbožná   |Terézia |2000 |f|
-      |Nálepná  |Gitka   |1980 |f|
-      |Abdul    |Joáchim |1982 |m|
-      |Zuzulová |Zuzana  |1998 |f|
-      |Janda    |Dalibor |1998 |m|
-      |Maiga    |Ibrahim |1998 |m|
-      |Hnát     |Juraj   |2021 |m|
-      |Janka    |Ján     |2013 |m|
-      |Mravec   |Fedor   |1999 |m|
-      |Kapustová|Alžbeta |2020 |f|
-      |Bojovnica|Xenia   |1987 |f|
+      |Janka   |Jasna    |1980 |f|
+      |Peter   |Fnukol   |1967 |m|
+      |Patrik  |Hrkut    |2003 |m|
+      |Patricia|Kukuricna|2010 |f|
+      |Leopold |Chytil   |1980 |m|
+      |Michal  |Duracik  |2015 |m|
+      |Michaela|Michova  |1967 |f|
+      |Jan     |Janech   |1996 |m|
+      |Thor    |Odinson  |-9999|m|
+      |Terezia |Zbozna   |2000 |f|
+      |Gitka   |Nalepna  |1980 |f|
+      |Joachim |Abdul    |1982 |m|
+      |Zuzana  |Zuzulova |1998 |f|
+      |Dalibor |Janda    |1998 |m|
+      |Ibrahim |Maiga    |1998 |m|
+      |Juraj   |Hnát     |2021 |m|
+      |Jan     |Janka    |2013 |m|
+      |Fedor   |Mravec   |1999 |m|
+      |Alzbeta |Kapustova|2020 |f|
+      |Matej   |Mesko    |1991 |m|   
+      |Xenia   |Bojovnica|1987 |f|
       ----------------------------
       ```
-   * Pozor na veľkosti buniek v jednotlivých stĺpcoch. Ich veľkosť sa rovná najdlšej bunke z daného stĺpca.
-5. Pod aktuálnu tabuľku vypísťe druhú zoradenú podľa priezviska
-8. Pridajte výpis štatistík (logika opäť do samostatnej triedy):
-   * Najmladšiu a najstaršiu osobu
+   * Pozor na veľkosti buniek v jednotlivých stĺpcoch. Ich veľkosť sa rovná najdlhšej bunke z daného stĺpca.
+   
+4. Pod aktuálnu tabuľku vypíšte druhú tabuľku zoradenú podľa priezviska.
+5. Pridajte výpis štatistík:
+   * Najmladšiu a najstaršiu osobu v zozname
    * Počet mužov a žien 
-   * Rok v ktorom sa narodilo najviac osôb
+   * Rok, v ktorom sa narodilo najviac osôb
 
 
 
