@@ -1,12 +1,5 @@
 <?php
-function faktorial(int $f) : int
-{
-   $fkt = 1;
-   for ($i=1; $i <= $f; $i++) {
-       $fkt *= $i;
-   }
-   return $fkt;
-}
+require "funkcie.php";
 
 for ($i = 1; $i < 11; $i++) {
     echo "$i ! = " . faktorial($i) . "<br>";
