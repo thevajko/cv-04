@@ -9,5 +9,9 @@ if (($handle = fopen("data/osoby.csv", "r")) !== FALSE) {
     fclose($handle);
 }
 
-var_dump($osoby);
+/** @var Osoba $osoba */
+foreach ($osoby as $osoba) {
+    echo $osoba->getMeno(). " "  . $osoba->getPriezvisko() . "<br>";
+}
+
 ?>
