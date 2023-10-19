@@ -1,6 +1,15 @@
 <?php
-require_once "funkcie.php";
+require "Osoba.php";
 
-for ($i=1; $i < 11; $i++) {
-    echo "$i! = ". faktorial($i) . "<br>";
+$osoby = [];
+if (($handle = fopen("data/osoby.csv", "r")) !== FALSE) {
+    while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
+        $osoby[] = new Osoba($data[0], $data[1], $data[2], $data[3]);
+    }
+    fclose($handle);
+}
+
+/** @var Osoba $osoba */
+foreach ($osoby as $osoba) {
+    echo " {$osoba->meno} {$osoba->priezvisko} {$osoba->pohlavie} {$osoba->datum}<br>";
 }
