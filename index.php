@@ -1,3 +1,5 @@
 <?php
 
-echo "Ahoj svet!";
+for ($i = 0; $i < 11; $i++) {
+    echo "$i<br>";
+}
