@@ -8,6 +8,22 @@ class Osoba
     private int $rok;
 
     /**
+     * @param string $meno
+     * @param string $priezvisko
+     * @param bool $pohlavie
+     * @param int $rok
+     */
+    public function __construct(string $meno, string $priezvisko, bool $pohlavie, int $rok)
+    {
+        $this->meno = $meno;
+        $this->priezvisko = $priezvisko;
+        $this->pohlavie = $pohlavie;
+        $this->rok = $rok;
+    }
+
+
+    /**
+     *
      * @return string
      */
     public function getMeno(): string
