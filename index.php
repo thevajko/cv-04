@@ -1,13 +1,7 @@
 <?php
 declare(strict_types=1);
+require_once "funkcie.php";
 
-function faktorial(int $n): int
-{
-    if ($n < 2) {
-        return 1;
-    }
-    return $n * faktorial($n - 1);
-}
 echo "Ahoj svet!";
 
 echo "<br>";
