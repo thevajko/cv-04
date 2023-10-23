@@ -6,5 +6,9 @@ for ($i = 1; $i < 11; $i++) {
     echo "!".$i."=".faktorial($i)."<br>\n";
 }
 
+$fh = fopen('data/osoby.csv','r');
+while ($line = fgets($fh)) {
+    $r = explode(";", $line);
 
-echo "Ahoj svet!5654654";
+}
+fclose($fh);
