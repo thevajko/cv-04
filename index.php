@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once "funkcie.php";
+require_once "Osoba.php";
 
 echo "Ahoj svet!";
 
@@ -15,4 +16,7 @@ for ($i = 1; $i <= 10; $i++) {
 }
 
 
-echo faktorial(3.14);
+foreach (Osoba::loadFromCSV("data/osoby.csv") as $osoba) {
+    var_dump($osoba);
+}
+
