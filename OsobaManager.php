@@ -2,7 +2,10 @@
 
 class OsobaManager {
 
-    public static function getOsoby()
+    /**
+     * @return Osoba[]
+     */
+    public static function getOsoby() : array
     {
 
     }
