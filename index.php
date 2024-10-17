@@ -5,8 +5,8 @@
 <body>
 <?php
 
-for ($i = 0; $i < 5; $i++) {
-    echo "<div>" .$i. "</div>";
+for ($i = 1; $i < 10; $i++) {
+    echo "<div>" .factorial($i). "</div>";
 }
 
 ?></body>
