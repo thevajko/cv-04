@@ -1,13 +1,15 @@
 <?php
     include  "faktorial.php";
+    include  "Osoba.php";
+    include  "OsobaManager.php";
 ?><html>
 <head></head>
 <body>
 <?php
+    $osoby = OsobaManager::getOsoby();
 
-for ($i = 1; $i < 10; $i++) {
-    echo "<div>" .factorial($i). "</div>";
-}
-
+    foreach ($osoby as $osoba) {
+        echo "<div>{$osoba->getMeno()}</div>";
+    }
 ?></body>
 </html>

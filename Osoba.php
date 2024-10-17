@@ -10,10 +10,10 @@ class Osoba
     /**
      * @param string $meno
      * @param string $priezvisko
-     * @param bool $pohlavie
+     * @param string $pohlavie
      * @param int $rok
      */
-    public function __construct(string $meno, string $priezvisko, bool $pohlavie, int $rok)
+    public function __construct(string $meno, string $priezvisko, string $pohlavie, int $rok)
     {
         $this->meno = $meno;
         $this->priezvisko = $priezvisko;
@@ -42,12 +42,12 @@ class Osoba
         $this->priezvisko = $priezvisko;
     }
 
-    public function isPohlavie(): bool
+    public function isPohlavie(): string
     {
         return $this->pohlavie;
     }
 
-    public function setPohlavie(bool $pohlavie): void
+    public function setPohlavie(string $pohlavie): void
     {
         $this->pohlavie = $pohlavie;
     }
