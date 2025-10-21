@@ -2,14 +2,7 @@
 
 include "inc/funkcie.php";
 
+include "inc/OsobaLoader.php";
 
-$premenna = "Hello World!";
+$o = OsobaLoader::loadFromCsv("data/osoby.csv");
 
-echo "Ahoj svet! {$premenna} 65465";
-
-// Print factorials from 0 to 10
-for ($i = 0; $i <= 10; $i++) {
-    $fact = factorial($i);
-
-    echo "<p>{$i}! = {$fact}</p>";
-}
