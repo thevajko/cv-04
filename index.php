@@ -1,8 +1,15 @@
+<html>
+<head>
+    <title>Ahoj svet!</title>
+    <meta charset="UTF-8">
+</head>
+<body>
 <?php
 
 include "inc/funkcie.php";
 require_once "inc/OsobaLoader.php";
 require_once "inc/OsobaTableRenderer.php";
+require_once "inc/OsobaStats.php";
 
 $premenna = "Hello World!";
 
@@ -31,3 +38,13 @@ usort($osobyZoradene, function($a, $b) {
 echo '<h2>Zoznam osôb (zoradený podľa priezviska)</h2>';
 echo OsobaTableRenderer::renderTable($osobyZoradene);
 
+// Najmladšia a najstaršia osoba
+$najmladsia = OsobaStats::findNajmladsia($osoby);
+$najstarsia = OsobaStats::findNajstarsia($osoby);
+echo '<h2>Najmladšia osoba</h2>';
+echo $najmladsia ? htmlspecialchars((string)$najmladsia) : 'Žiadna osoba';
+echo '<h2>Najstaršia osoba</h2>';
+echo $najstarsia ? htmlspecialchars((string)$najstarsia) : 'Žiadna osoba';
+
+?></body>
+</html>
