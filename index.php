@@ -22,3 +22,12 @@ for ($i = 0; $i <= 10; $i++) {
 $osoby = OsobaLoader::loadFromCsv(__DIR__ . '/data/osoby.csv');
 echo '<h2>Zoznam osôb</h2>';
 echo OsobaTableRenderer::renderTable($osoby);
+
+// Druhý výpis tabuľky, zoradený podľa priezviska
+$osobyZoradene = $osoby;
+usort($osobyZoradene, function($a, $b) {
+    return strcmp($a->getPriezvisko(), $b->getPriezvisko());
+});
+echo '<h2>Zoznam osôb (zoradený podľa priezviska)</h2>';
+echo OsobaTableRenderer::renderTable($osobyZoradene);
+
