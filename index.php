@@ -1,3 +1,6 @@
 <?php
+echo "Ahoj svet!\n";
 
-echo "Ahoj svet!";
+for ($i = 0; $i < 10; $i++) {
+    echo "Cislo: " . $i . "<br>\n";
+}
