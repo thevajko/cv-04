@@ -1,4 +1,6 @@
 <?php
+require_once 'Osoba.php';
+
 echo "Ahoj svet!\n";
 
 for ($i = 0; $i < 10; $i++) {
@@ -14,3 +16,8 @@ function faktorial(int $n) : int {
 
 $n = 20;
 echo "Faktorial $n je: " . faktorial($n) . "\n";
+
+$osoby = Osoba::nacitajOsoby("data/osoby.csv");
+
+//vypise pocet osob
+echo "Pocet osob: " . count($osoby) . "\n";
